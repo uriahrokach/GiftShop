@@ -32,6 +32,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@main
       - name: Download artifact
+        uses: actions/download-artifact@main
+      - name: Deploy to firebase
         uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting
