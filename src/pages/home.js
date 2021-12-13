@@ -2,12 +2,6 @@ import React from "react"
 import { useState } from "react";
 import { onSnapshot, collection, query, where, orderBy } from "firebase/firestore";
 
-const VALUES = [
-    {name: 'Mothers touch', description: 'Healing gift taught by unicorn', mechanics: 'Spend One Point of Gnosis', rank: 1, tags:['children of gaia', 'theurge']},
-    {name: 'Resist Pain', description: 'Resist the damage caused by your enemies',  mechanics: 'Spend One Point of Willpower', rank: 1, tags:['philidox', 'get of fenris', 'children of gaia']},
-    {name: 'Name the spirit', description: 'Name the spirit that is in front of you',  mechanics: 'Dont really remmber those', rank: 2, tags:['lupus', 'theurge']},
-]
-
 /**
  * 
  * @param {string} value 
