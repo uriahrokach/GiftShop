@@ -1,0 +1,28 @@
+[
+    {
+        "name": "breed",
+        "options": ["homid", "lupus", "metis"]
+    },
+    {
+        "name": "auspiece", 
+        "options": ["ragabash", "theurge", "philodox", "galiard", "aharoun"]
+    },
+    {
+        "name": "tribe", 
+        "options": [
+            "black furies",
+            "bone gnawers",
+            "chidren of gaia",
+            "fiana", 
+            "get of fenris", 
+            "glass walkers",
+            "red talons",
+            "shadow lords",
+            "silent striders",
+            "silver fangs",
+            "stargazers",
+            "uktena",
+            "wendigo"
+        ]
+    }
+]
