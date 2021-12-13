@@ -20,6 +20,8 @@ jobs:
       run: npm ci
     - name: Run Build
       run: npm run build
+      env:
+        CI: false
     - name: Archive Artifact
       uses: actions/upload-artifact@main
       with:
