@@ -1,0 +1,62 @@
+.home {
+    display: flex;
+}
+
+.main-body {
+    background-color: #111111;
+    color: aliceblue;
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.main-header {
+    display: flex;
+}
+
+.main-header img {
+    width: 200px;
+}
+
+.gift-search {
+    border-radius: 5px;
+    margin: 15px;
+    padding: 5px;
+    border-style: none;
+    background-color: aliceblue;
+    color: #222222;
+    font-size: 22px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    outline: none;
+    flex: 4;
+    font: inherit;
+}
+
+.gift-card {
+    border-radius: 5px;
+    margin: 15px;
+    padding: 15px;
+    background-color: #222222;
+}   
+
+.gift-title {
+    color: #e06f50 ;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.gift-title small {
+    font-size: 15px;
+}
+
+.tag {
+    border: #e06f50;
+    border-style: solid; 
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+    border-width: 2px;
+    border-radius: 5px;
+    color: #e06f50;   
+}

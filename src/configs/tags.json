@@ -1,28 +1,28 @@
 [
     {
         "name": "breed",
-        "options": ["homid", "lupus", "metis"]
+        "options": ["Homid", "Lupus", "Metis"]
     },
     {
         "name": "auspiece", 
-        "options": ["ragabash", "theurge", "philodox", "galiard", "aharoun"]
+        "options": ["Ragabash", "Theurge", "Philodox", "Galliard", "Aharoun"]
     },
     {
         "name": "tribe", 
         "options": [
-            "black furies",
-            "bone gnawers",
-            "chidren of gaia",
-            "fiana", 
-            "get of fenris", 
-            "glass walkers",
-            "red talons",
-            "shadow lords",
-            "silent striders",
-            "silver fangs",
-            "stargazers",
-            "uktena",
-            "wendigo"
+            "Black Furies",
+            "Bone Gnawers",
+            "Chidren of Gaia",
+            "Fianna", 
+            "Get of Fenris", 
+            "Glass Walkers",
+            "Red Talons",
+            "Shadow Lords",
+            "Silent Striders",
+            "Silver Fangs",
+            "Stargazers",
+            "Uktena",
+            "Wendigo"
         ]
     }
 ]

@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import categories from "../configs/tags.json";
+import { RiArrowDropDownLine } from "react-icons/ri";
+import { CSSTransition } from "react-transition-group"
 
+import '../styles/navbar.css';
 
 const tagChanged = (e, tags, setTags) => {
     if (e.target.checked) {
@@ -11,25 +14,28 @@ const tagChanged = (e, tags, setTags) => {
 }  
 
 const FilterCategory = (props) => {
-    console.log(props.category.name);
+    const [open, setOpen] = useState(false)
     return (
-        <div>
-            <h3>{props.category.name}</h3>
-            {props.category.options.map(tag => {
-                return (
-                    <div>
-                        <input type="Checkbox" Value={tag} onChange={(e) => tagChanged(e, props.tags, props.setTags)}/>
-                        <label for={tag}>{tag}</label>
-                    </div>
-                )
-            })}
-        </div>
+        <CSSTransition in={open} timeout={200} classNames="nav-dropdown">
+            <div className="nav-category" open={open}>
+                <div className="nav-header" onClick={() => setOpen(!open)}>{props.category.name} <RiArrowDropDownLine className="icon"/></div>
+                {open && props.category.options.map(tag => {
+                    return (
+                        <div className="choice">
+                            <input type="Checkbox" Value={tag} onChange={(e) => tagChanged(e, props.tags, props.setTags)} checked={props.tags.includes(tag)}/>
+                            <label for={tag}>{tag}</label>
+                        </div>
+                    )
+                })}
+            </div>
+        </CSSTransition>
     )
 }
 
 const FilterBar = (props) => {
     return (
-        <div>
+        <div className="nav-bar">
+            <h3 className="filter-title">Filters</h3>
             {categories.map(category => <FilterCategory category={category} tags={props.tags} setTags={props.setTags}/>)} 
         </div>  
     )
