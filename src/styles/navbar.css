@@ -1,0 +1,98 @@
+.nav-bar {
+    background-color: #222222;
+    width: 200px;
+    height: 100%;
+    padding: 10px;
+    justify-content:start;
+    position: fixed;
+    top: 0;
+    color: aliceblue;
+    overflow: scroll;
+}
+
+.nav-bar::-webkit-scrollbar {
+    width: 10px;
+}
+
+.nav-bar::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+.nav-bar::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.nav-header {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    transition: 150ms ease; 
+}
+
+.nav-dropdown-enter .icon{
+    transform: rotate(0deg);
+}
+
+.nav-dropdown-enter-active .icon{
+    transform: rotate(180deg);
+}
+
+.nav-dropdown-exit .icon{
+    
+}
+
+.nav-dropdown-exit-active .icon{
+    transform: rotate(0deg);
+}
+
+.icon {
+    transition: transform 300ms;
+}
+
+.nav-header:hover {
+    color: #e06f50;
+    background-color: #333333;
+    cursor: pointer;
+}
+
+
+.nav-category {
+    margin: 10px;
+}
+
+.filter-title  {
+    display: table;
+    margin: 10px auto;
+    font-size: 23px;    
+    color: #e06f50;
+}
+
+.choice {
+    font-size: 15px;
+    margin: 5px;
+    align-items: center;
+}
+
+.choice input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #888888;
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    border-radius: 3px;
+    color: aliceblue;
+    transition: background-color 150ms;
+}
+
+.choice input[type="checkbox"]:hover {
+    cursor: pointer;
+    background-color: #555555;
+}
+
+.choice input[type="checkbox"]:checked {
+    background-color: #e06f50;
+}
